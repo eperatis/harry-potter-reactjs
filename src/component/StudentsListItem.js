@@ -2,7 +2,9 @@ import React from "react";
 
 function StudentsListItem({ name, actor }) {
     return (
-        <span>({name, actor})</span>
+        <span>
+            {name} {actor}
+        </span>
     );
 }
 
