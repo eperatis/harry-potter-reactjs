@@ -25,7 +25,7 @@ class StaffList extends React.Component {
     }
     render() {
         return (
-            <Table>
+            <Table striped bordered hover responsive>
                 <thead>
                     <tr>
                         <th>Character</th>
