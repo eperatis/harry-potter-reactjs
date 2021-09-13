@@ -2,6 +2,7 @@ import React from "react";
 import { default as store } from '../store/StaffStore';
 import StaffListItem from './StaffListItem';
 import * as actions from '../action/StaffActions';
+import { Table } from 'react-bootstrap';
 
 class StaffList extends React.Component {
     constructor(props) {
@@ -24,13 +25,21 @@ class StaffList extends React.Component {
     }
     render() {
         return (
-            <div>
-                {this.state.staff.map(({ name, actor }, index) => {
-                    return (
-                        <StaffListItem key={index} name={name} actor={actor} />
-                    );
-                })}
-            </div>
+            <Table striped bordered hover responsive>
+                <thead>
+                    <tr>
+                        <th>Character</th>
+                        <th>Actor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.state.staff.map(({ name, actor }, index) => {
+                        return (
+                            <StaffListItem key={index} name={name} actor={actor} />
+                        );
+                    })}
+                </tbody>
+            </Table>
         );
     }
 }

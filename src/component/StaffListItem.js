@@ -2,9 +2,10 @@ import React from "react";
 
 function StaffListItem({ name, actor }) {
     return (
-        <span>
-            {name} {actor}
-        </span>
+        <tr>
+            <td>{name}</td>
+            <td>{actor}</td>
+        </tr>
     );
 }
 
