@@ -7,7 +7,7 @@ function Navigation() {
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="justify-content-center">
+                    <Nav className="justify-content-center" style={{ width: "100%" }}>
                         <Nav.Item>
                             <Nav.Link eventKey="home" href="/home">Home</Nav.Link>
                         </Nav.Item>
